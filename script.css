@@ -1,0 +1,23 @@
+document.getElementById('trainerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const goal = document.getElementById('goal').value;
+
+    // Simulate a successful form submission
+    alert(`Thank you, ${name}! I'll reach out shortly to discuss your ${goal} goals.`);
+    
+    this.reset();
+});
+
+// Smooth scroll for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        if(this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});

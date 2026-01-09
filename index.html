@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ml1</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Performance | Personal Training</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <h1>8=====D</h1>
-  <script src="scripts.js"></script>
+
+    <nav>
+        <div class="logo">Justin<span>FITNESS</span></div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#contact" class="btn-nav">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>TRANSFORM YOUR <span class="highlight">BODY</span>, RECLAIM YOUR LIFE.</h1>
+            <p>Science-backed coaching designed for high-performers. No fluff. Just results.</p>
+            <div class="cta-group">
+                <a href="#contact" class="btn-primary">Start Your Transformation</a>
+                <a href="#services" class="btn-secondary">View Programs</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Coaching Programs</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1-on-1 VIP</h3>
+                <p>Private sessions with custom nutrition and 24/7 support.</p>
+            </div>
+            <div class="card">
+                <h3>Online Elite</h3>
+                <p>Custom training delivered via app. Train anywhere in the world.</p>
+            </div>
+            <div class="card">
+                <h3>The 90-Day Blast</h3>
+                <p>A high-intensity program designed for rapid fat loss.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Ready to Level Up?</h2>
+        <form id="trainerForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <select id="goal">
+                <option value="weight-loss">Weight Loss</option>
+                <option value="muscle">Muscle Gain</option>
+                <option value="performance">Athletic Performance</option>
+            </select>
+            <button type="submit" class="btn-primary">Apply for Coaching</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-
-
 </html>
-
